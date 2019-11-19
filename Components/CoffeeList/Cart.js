@@ -4,9 +4,12 @@ import { withNavigation } from "react-navigation";
 
 function Cart(props) {
   return (
-    <Button onPress={() => props.navigation.navigate("CartScreen")} full danger>
-      <Icon type="AntDesign" name="shoppingcart" />
-    </Button>
+    <Icon
+      type="AntDesign"
+      name="shoppingcart"
+      onPress={() => props.navigation.navigate("CartScreen")}
+      style={{ color: "white" }}
+    />
   );
 }
 
